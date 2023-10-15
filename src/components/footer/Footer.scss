@@ -1,0 +1,74 @@
+@import './../variables.scss';
+
+.footer{
+  background-color: $bg-green;
+  // max-height: 100px;
+  padding: $padding-components-all;
+}
+
+.contacts{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 30px;
+}
+
+.contact_item{
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact_item p{
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: $font-size-small;
+}
+
+.contact-img img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+@media(max-width:600px){
+  .contacts{
+    display: block;
+    .contact_item{
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      .item{
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+@media(min-width: 600px){
+  .contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    .contact_item{
+      display: flex;
+    }
+  }
+}
+@media(min-width: 720px){
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .contact_item{
+      display: flex;
+    }
+  }
+}

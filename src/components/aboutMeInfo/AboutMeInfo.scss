@@ -1,0 +1,163 @@
+@import './../variables.scss';
+
+.AboutMeInfo{
+    padding: $padding-components-all;
+    background-color: $bg-green;  
+}
+
+.AboutMeInfo-header{
+    text-align: center;
+    color: $color-white;
+    font-size: $font-size-title;
+    margin-bottom: 50px;
+}
+.descriptionBlock{
+    width: 370px;
+    min-height: 600px;
+    padding: 5rem 1rem 1rem 1rem;
+    text-align: center;
+    margin: auto;
+    color: $color-white;
+    font-size: 1rem;
+    border-radius: 5%;
+    border-color:#032A30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('img/myfoto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.greeting{
+    font-size: 1.7rem;
+}
+
+.myName{
+    color: $color-gold;
+}
+
+.skillsBlock{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.skilsBlock-wrap{
+    color: $color-white;
+    text-align: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skilsBlock-title{
+    font-size: 1.5rem;
+}
+
+.knowledge-item,.interests-item{
+    color: rgb(185, 170, 85);
+}
+
+.knowledge-item p,.interests-item p{
+    margin: 20px 0 5px;
+}
+
+.progres-line{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    height: 30px;
+    background-color: rgb(102, 118, 110);
+    overflow: hidden;
+}
+
+.progres{
+    height: 100%;
+    transition: 3s ease-in-out;
+}
+
+.progres-html{
+    background: $progres-knowledge-color;
+}
+
+.progres-javaScript{
+    background: $progres-knowledge-color;
+}
+
+.progres-jQuery{
+    background: $progres-knowledge-color;
+}
+
+.progres-react{
+    background: $progres-knowledge-color;
+}
+
+.progres-angular{
+    background: $progres-knowledge-color;
+}
+
+.progres-git{
+    background: $progres-knowledge-color;
+}
+
+.progres-programming{    
+    background: $progres-interests-color;
+}
+
+.progres-comunication{
+    background: $progres-interests-color;
+}
+
+.progres-sport{
+    background: $progres-interests-color;
+}
+
+.progres-travel{
+    background: $progres-interests-color;
+}
+
+.progres-info{
+    background: $progres-interests-color;
+}
+
+.progres-readingBooks{
+    background: $progres-interests-color;
+}
+
+
+
+@media(max-width:600px){
+    .aboutMeBlockWrapper{
+        display: block;
+        .descriptionBlock{
+            width: 100%;
+            background-position: center;
+        }
+        .skillsBlock{
+            display: block;
+        }
+    }
+}
+@media(min-width:600px){
+    .aboutMeBlockWrapper{
+        display: block;
+        .descriptionBlock{
+            max-width: 700px;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media(min-width:1100px){
+    .aboutMeBlockWrapper{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 0.7fr 2fr;
+        .descriptionBlock{
+            max-width: 700px;
+            background-size: cover;
+            height: 100%;
+        }
+    }
+}

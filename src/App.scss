@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&display=swap');
+@import './components/variables.scss';
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Container{
+  min-width: 280px;
+  max-width: 1920px;
+  background-color: rgb(213, 147, 147);
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  border: 3px solid black;
+  margin: auto;
+  background-color: rgb(213, 147, 147);
+  font-family: 'Roboto', sans-serif;
+  border: 3px solid black;
+  text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
